@@ -1,0 +1,282 @@
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #8ab1b1; }
+
+/**********navbar anidamiento***********/
+.navbar1 {
+  background-color: #6d6a70;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+  padding: 50px; }
+  .navbar1 .menu {
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif; }
+    .navbar1 .menu li {
+      list-style: none; }
+      .navbar1 .menu li a {
+        text-decoration: none;
+        color: #302e2b; }
+
+.logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2 / 3; }
+
+/* Pagina index */
+.artist {
+  height: 100vh;
+  background-image: url("../Imagenes/lp.jpg");
+  background-size: contain;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  position: relative; }
+
+.artist .info {
+  grid-column: 9 / 10;
+  grid-row: 2 / 6;
+  color: white; }
+
+.artist .info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em; }
+
+.artist .info h1 {
+  font-size: 5em;
+  font-weight: 900; }
+
+.artist .info p {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif; }
+
+.boton {
+  font-size: 1em;
+  background: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #c0b99d;
+  border-radius: 40px;
+  margin-top: 10px; }
+
+.boton:hover {
+  background-color: white;
+  color: black; }
+
+.footer {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-color: #c0b99d;
+  color: #31302d;
+  grid-template-areas: "siguenos lista social"; }
+
+/*Pagina galeria*/
+.tituloGaleria {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif; }
+
+.galeria {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto; }
+
+.galeriaImg {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 30px;
+  filter: brightness(70%);
+  animation: escalar 1.5s infinite alternate; }
+
+@keyframes escalar {
+  to {
+    transform: scale(1); }
+  from {
+    transform: scale(1.05); } }
+
+.galeriaImg:hover {
+  filter: brightness(100%); }
+
+.galeria1 {
+  background-image: url("../Imagenes/lp.jpg");
+  background-size: contain;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  position: relative; }
+
+/*Pagina contacto*/
+.tabla {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100px;
+  max-height: 100px;
+  display: grid;
+  position: relative; }
+
+/*Pagina discografia*/
+.discografia {
+  background-image: url("../Imagenes/lp.jpg");
+  background-size: contain;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  position: relative; }
+
+.formulario {
+  background-image: url("../Imagenes/lp.jpg");
+  background-size: contain;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  position: relative; }
+
+.formu {
+  max-width: 500px;
+  height: 400px;
+  padding: 30px;
+  margin: 50px 20px 100px 1300px;
+  display: flex; }
+
+/*Pagina multimedia*/
+.multimedia {
+  background-image: url("../Imagenes/lp.jpg");
+  background-size: contain;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  position: relative; }
+
+.tituloMultimedia {
+  font-size: 3em;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-align: center; }
+
+.video {
+  padding: 10px 500px 500px 260px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between; }
+
+.container1 {
+  height: 300px;
+  max-width: 600px;
+  display: grid; }
+
+.slide {
+  height: 314px;
+  width: 500px;
+  align-items: center;
+  display: flex;
+  margin: 100px 1px 100px 630px; }
+
+/* .slide img {
+    height: 314px;
+    width: 500px;
+} 
+*/
+/*BEM
+.titulares {
+    .titulales__titulo {
+        color: yellow;
+        background: black;
+    }
+}
+
+.titulales__parrafo {
+    color: blue;
+}
+
+.titulales__menu {
+
+    .titulales__lista {
+        color: #000;
+    }
+
+    .titulales__item {
+        font-size: 50px;
+
+
+        .titulares__item--activo {
+            color: rgb(202, 50, 202);
+        }
+    }
+}
+*/
+.contenedorBem {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto; }
+
+.tarjeta {
+  background: #FFF;
+  border-radius: 15px;
+  padding: 20px;
+  display: felx;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px; }
+
+.tarjeta__imagen {
+  width: 650px;
+  height: 200px;
+  background: #000;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block; }
+
+tarjeta__img {
+  width: 100%; }
+
+tarjeta__titulo {
+  font-family: 'Raleway' sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px; }
+
+tarjeta__enlace {
+  color: #000; }
+
+tarjeta__parrafo {
+  line-height: 28px;
+  color: #6D6D6D;
+  margin-bottom: 20px; }
+
+.boton1 {
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  padding: 0 30px;
+  background: #000;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #403CC2;
+  transition: .3s ease all; }
+
+.boton1:hover {
+  background: #1B1881;
+  text-decoration: none; }
+
+.boton1--absolute {
+  position: absolute;
+  right: 20px;
+  bottom: -25px; }
